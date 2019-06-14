@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Industria 2.0</title>
+    <link rel="stylesheet" href="View/css/style.css">
+    <script src="View/js/jquery.js"></script>
+</head>
+<body>
+<main id="main-geral">
+    <div id="container-scene">
+        <img id="armazem" src="View/img/armazem.png" alt="armazem">
+
+
+        <img id="expedicao" src="View/img/expedicao.png" alt="expedicao">
+        <img id="maquina2" src="View/img/m2v0.png" alt="maquina2">
+        <img id="caixa2" src="View/img/caixa2.png" alt="caixa2">
+        <img id="caixa1" src="View/img/caixa1.png" alt="caixa1">
+        <img id="maquina1-1" src="View/img/maquina1GIF.gif" alt="maquina 1">
+    </div>
+    <form id="form_testar" onsubmit="return false">
+    </form>
+    <footer id="container-buttons">
+        <div id="input">
+            <div id="sinalizador" style="width: 20px;height: 20px;background-color: green; float: left; margin-right: 10px"></div>
+            <button id="btn1">A(pega peça)</button>
+            <button id="btn2">B(solta peça)</button>
+            <button id="btn3">C(faz peça)</button>
+            <button id="btn4">D(peça pronta)</button>
+            <!--<button id="btn5">Action5</button>
+            <button id="btn6">Action 6</button>
+            <button id="btn7">Action 7</button>
+            <button id="btn8">Action 8</button>
+            <button id="btn9">Action 9</button>
+            <button id="btn10">Action 10</button>
+            <button id="btn11">Action 11</button>
+            <button id="btn12">Action 12</button>
+            <button id="btn13">Action 13</button>-->
+            <label >Input:</label>
+            <input id="entrada" type="text" form="form_testar">
+            <input id="testar" type="submit" value="ok" form="form_testar">
+            Saida: <span id="saida"></span>
+        </div>
+    </footer>
+</main>
+
+
+<script src="View/js/controller.js"></script>
+
+<script>
+    var fila_animacao = [];
+    var animacoes = [a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12];
+    var proxima_animacao = 0;
+    var simbolos = [];
+    var estado_inicial = 0;
+    var estado_atual = 0;
+    var estados_aceitacao = [];
+    var estados_rejeicao = [];
+    var funcoes_transicao = [];
+    var finalizado = false;
+    reiniciarAutomato();
+</script>
+</body>
+</html>

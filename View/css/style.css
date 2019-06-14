@@ -1,0 +1,76 @@
+#main-geral{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #B9B9B9;
+}
+#container-scene{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #87CEFA;
+    background: url("../img/bg_lfa.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#container-buttons{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   background-color: #fff;
+}
+#label-i{
+    width: 25%;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+#caixa1{
+    width: 258px;
+    position: absolute;
+    left: 155px;
+    bottom: 191px;
+    display: block;
+}
+#caixa2{
+    width: 258px;
+    position: absolute;
+    left: 27px;
+    bottom: 195px;
+
+}
+#maquina1-1 {
+    width: 285px;
+    position: absolute;
+    top: 20px;
+    bottom: 120px;
+    right: 0px;
+    display: block;
+}
+#armazem{
+    width: 333px;
+    position: absolute;
+    left: 56px;
+    bottom: 89px;
+}
+#expedicao{
+    width: 315px;
+    position: absolute;
+    right: 58px;
+    bottom: 85px;
+}
+#maquina2{
+    width: 360px;
+    position: absolute;
+    bottom: 151px;
+    left: 40%;
+}
