@@ -5,8 +5,7 @@ function reiniciarAutomato(){
     estado_inicial = 0;
     estado_atual = estado_inicial;
     estados_aceitacao = [12];
-    estados_rejeicao = [13];
-    var rej = 13//estado rejeicao para facil utilizacao e entendimento
+    estados_rejeicao = [];
     funcoes_transicao = [
         [1,null,null,null],//q0 (A,B,C,D) 1=q1 2=q2 ...
         [null,2,null,null],//q1
@@ -21,7 +20,6 @@ function reiniciarAutomato(){
         [11,null,null,null],//q10
         [null,12,null,null],//q11
         [null,null,null,null],//q12
-        //[null,null,null,null],//q13
     ];
     proxima_animacao = 0;
     finalizado = false;
